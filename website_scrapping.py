@@ -3,10 +3,10 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import time,re
 url="https://ful.io/"
-driver=webdriver.Chrome(executable_path=r"C:\Users\mlthi\OneDrive\Desktop\project\10th class results\driver\chromedriver.exe")
+driver=webdriver.Chrome(executable_path=r"")#give your own webdriver path
 driver.maximize_window()
 driver.get(url)
-time.sleep(15)
+time.sleep(5)
 social_links=[]
 c=""
 email=0
@@ -22,7 +22,8 @@ for elem in elems:
        c="+"+" ".join(obj1[1:])
 driver.close()
 print("Social links -")
-print(social_links)
+print(social_links[0])
+print(social_links[1])
 print("Email/s")
 print(email)
 print("Contact:")
